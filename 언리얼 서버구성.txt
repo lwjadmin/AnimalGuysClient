@@ -1,0 +1,37 @@
+OpenLevel 
+
+Server : LevelName & Options : listen 
+
+Client : [ServerIPAddress] & Options : null
+
+Advanced Session 사용 안해보고 구현해보는게 좋다!
+
+언리얼 서버에서 지원한다! 
+
+OpenLevel & TransitionMap [매끄러운 이동 활성화!] 
+
+트랜지션 맵 : 쪼그만 대기방[매끄러운 이동 활성화]
+
+게임모드는 서버만 있다!
+
+플레이어스테이트는 서버/클라 모두 다 있고, 서버에 변경사항을 보내면 서버에서 바꾸고 클라에게 Replicate한다.
+
+플레이어컨트롤러는 서버는 다있고, 클라는 하나만 있다. 
+
+플컨 서버 먼저 다만들고 클라에 만든다.
+
+스테이트는 서버/클라 다있다!
+
+플레이어3, RunAsListenServer
+
+Server 1 , 
+
+Server - Client 1, 
+
+Client 1 , 
+
+Server - Client 2,
+
+Client 2 , = 5번
+
+(서버 : 3개, 클라1 : 1개, 클라2 : 1개)
